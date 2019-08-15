@@ -1,0 +1,1153 @@
+05-Jun-2019 08:52:55.824 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jun-2019 08:52:55.824 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jun-2019 08:52:55.824 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@4ae9cfc1')
+05-Jun-2019 11:49:22.381 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jun-2019 11:49:22.381 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-Jun-2019 14:06:19.041 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jun-2019 14:06:19.042 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jun-2019 14:06:19.044 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@512baff6')
+05-Jun-2019 14:13:32.624 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 14:13:32.627 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 14:13:37.034 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 14:13:37.034 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [112] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+109:                             <td><%=docgia.getNgayHetHan()%></td>
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+
+
+An error occurred at line: [113] in the jsp file: [/docgia.jsp]
+nhanvien cannot be resolved
+110:                             <td><%=docgia.getNgayCap()%></td>
+111:                             <td>
+112:                                 <a href="sua_nhanvien.jsp?manv=<%=nhanvien.getMaNhanVien()%>&hoten=<%=nhanvien.getHoTen()%>&chucvu=<%=nhanvien.getChucVu()%>&taikhoan=<%=nhanvien.getTaiKhoan()%>&matkhau=<%=nhanvien.getMatKhau()%>&quyen=<%=nhanvien.getQuyen()%>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+113:                                 <a onclick="return xacNhan()" href="Manager_NhanVien_Servlet?manv=<%=nhanvien.getMaNhanVien()%>"class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+114:                             </td>
+115:                         </tr> 
+116:                         <%}%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 17:55:09.115 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [119] in the jsp file: [/docgia.jsp]
+list_nv cannot be resolved to a variable
+116:                         </tr>
+117:                     </thead>
+118:                     <tbody>
+119:                         <%for (NhanVien nhanvien : list_nv) {%>
+120:                         <tr>
+121:                             <td><%=nhanvien.getMaNhanVien()%></td>
+122:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+An error occurred at line: [193] in the jsp file: [/docgia.jsp]
+Duplicate local variable context
+190:                         </tr> 
+191:                         <%}%>
+192:                     </tbody>
+193:                     <%ServletContext context = getServletContext();
+194:                         context.setAttribute("context", "delete_nv");
+195:                     %>
+196:                 </table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 17:55:09.115 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [119] in the jsp file: [/docgia.jsp]
+list_nv cannot be resolved to a variable
+116:                         </tr>
+117:                     </thead>
+118:                     <tbody>
+119:                         <%for (NhanVien nhanvien : list_nv) {%>
+120:                         <tr>
+121:                             <td><%=nhanvien.getMaNhanVien()%></td>
+122:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+An error occurred at line: [193] in the jsp file: [/docgia.jsp]
+Duplicate local variable context
+190:                         </tr> 
+191:                         <%}%>
+192:                     </tbody>
+193:                     <%ServletContext context = getServletContext();
+194:                         context.setAttribute("context", "delete_nv");
+195:                     %>
+196:                 </table>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [119] in the jsp file: [/docgia.jsp]
+list_nv cannot be resolved to a variable
+116:                         </tr>
+117:                     </thead>
+118:                     <tbody>
+119:                         <%for (NhanVien nhanvien : list_nv) {%>
+120:                         <tr>
+121:                             <td><%=nhanvien.getMaNhanVien()%></td>
+122:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+An error occurred at line: [193] in the jsp file: [/docgia.jsp]
+Duplicate local variable context
+190:                         </tr> 
+191:                         <%}%>
+192:                     </tbody>
+193:                     <%ServletContext context = getServletContext();
+194:                         context.setAttribute("context", "delete_nv");
+195:                     %>
+196:                 </table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:522)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:362)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:346)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:03.292 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:03.292 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [An exception occurred processing [/docgia.jsp] at line [185]
+
+182:                         </tr>
+183:                     </thead>
+184:                     <tbody>
+185:                         <%for (NhanVien nhanvien : list_nv) {%>
+186:                         <tr>
+187:                             <td><%=nhanvien.getMaNhanVien()%></td>
+188:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:07.991 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:07.991 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [An exception occurred processing [/docgia.jsp] at line [185]
+
+182:                         </tr>
+183:                     </thead>
+184:                     <tbody>
+185:                         <%for (NhanVien nhanvien : list_nv) {%>
+186:                         <tr>
+187:                             <td><%=nhanvien.getMaNhanVien()%></td>
+188:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:16.004 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet [jsp] threw exception
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:04:16.004 SEVERE [http-nio-8080-exec-14] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [DocGia_Servlet] in context with path [/QLTV_ver1] threw exception [An exception occurred processing [/docgia.jsp] at line [185]
+
+182:                         </tr>
+183:                     </thead>
+184:                     <tbody>
+185:                         <%for (NhanVien nhanvien : list_nv) {%>
+186:                         <tr>
+187:                             <td><%=nhanvien.getMaNhanVien()%></td>
+188:                             <td><%=nhanvien.getHoTen()%></td>
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.docgia_jsp._jspService(docgia_jsp.java:311)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:385)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:329)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:459)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at Controller.DocGia_Servlet.processRequest(DocGia_Servlet.java:47)
+	at Controller.DocGia_Servlet.doGet(DocGia_Servlet.java:66)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+05-Jun-2019 18:35:52.647 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jun-2019 18:35:52.647 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

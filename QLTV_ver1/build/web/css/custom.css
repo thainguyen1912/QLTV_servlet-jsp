@@ -1,0 +1,17 @@
+.mt-15{
+	margin-top: 15px;
+}
+.mr-5{
+	margin-right: 5px;
+}
+.ml-5{
+	margin-left: 5px;
+}
+th , input, td{
+    text-align: center;
+}
+.table > tbody > tr > td{
+    vertical-align: middle;
+}
+
+
