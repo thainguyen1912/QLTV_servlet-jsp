@@ -32,7 +32,7 @@ public class NhanVien_Servlet extends HttpServlet {
         HttpSession session=request.getSession();
         if(session.getAttribute("user")!=null){
             NhanVien_DAO nvdao=new NhanVien_DAO(db);
-            ArrayList<NhanVien> arr_nv=nvdao.getAll();
+            ArrayList<NhanVien> arr_nv=nvdao.getAll_ThuThu();
             request.setAttribute("list_nv", arr_nv);
             RequestDispatcher rq=request.getRequestDispatcher("nhanvien.jsp");
             rq.forward(request, response);

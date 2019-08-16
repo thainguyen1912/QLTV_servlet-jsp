@@ -4,6 +4,29 @@
     ArrayList<DocGia> list_dg = (ArrayList<DocGia>) request.getAttribute("list_dg");
     ServletContext context = getServletContext();
     context.setAttribute("context", "delete_dg");
+    
+
+    String disable_table="display: block";
+    String mess="";
+    if(list_dg.size()==0){
+        disable_table="display: none";
+        mess="Không Tìm Thấy. Xin Kiểm Tra Lại!";
+    }
+    String madg_search="";
+    String madg="";
+    String disable_butmess="";
+    try{
+        madg=request.getAttribute("madg_search").toString();
+    }   
+    catch(Exception e){
+    }
+    if(madg!=""){
+        madg_search=madg;
+        disable_butmess="display: block";
+    }
+    else{
+        disable_butmess="display: none";
+    }
 %>
 <!DOCTYPE html>
 <html>
@@ -49,15 +72,16 @@
                         <div style="width: 40%; float: left" class="col-sm-8"><h2>Danh Sách <b>Độc Giả</b></h2></div>
                         <form action="Search_DocGia_Servlet">
                             <div style="width:48%; float: left">
-                                <input id="madg" type="text" name="madg_search" style="font-size: 14px;border-radius: 4px;height: 30px;border-style: groove;width: 220px; margin-left: 38%;" placeholder="  search here.. " required>
-                                <a><button style="background-color: #30a5ff" type="" class="btn btn-info add-new"><span class="fa fa-search"></span>  Search</button></a>
+                                <input value="<%=madg_search %>" id="madg" type="text" name="madg_search" style="font-size: 14px;border-radius: 4px;height: 30px;border-style: groove;width: 220px; margin-left: 38%;" placeholder="  search here.. " required>
+                                <a><button style="background-color: #30a5ff" type="" class="btn btn-info add-new"><span class="fa fa-search"></span>  Tìm</button></a>
                             </div>
                         </form>
                         <div style="width: 12%" class="col-sm-4">
-                            <a href="them_docgia.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                            <a href="them_docgia.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Thêm</button></a>
                         </div>
                     </div>
                 </div>
+                <div  style=" <%=disable_table %>">
                 <table class="table table-bordered table_hover" id="table" style="border-radius:14px;border-style: hidden ">
                     <thead>
                         <tr>
@@ -68,12 +92,10 @@
                             <th>Đối Tượng</th>
                             <th>Ngày Cấp</th>
                             <th>Ngày Hết Hạn</th>
-                            <th>Mật Khẩu</th>
                             <th>Số Lượng Tài Liêu</th>
                             <th>Số Lượng Mỗi Tài Liệu</th>
                             <th>Số Ngày Mượn</th>
-                            <th>Số Dư Tài Khoản</th>
-                            <th style="width: 17%">Actions</th>
+                            <th style="width: 17%">Thao Tác</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -86,14 +108,12 @@
                             <td><%=docgia.getDoiTuong()%></td>
                             <td><%=docgia.getNgayCap()%></td>
                             <td><%=docgia.getNgayHetHan()%></td>
-                            <td><%=docgia.getMatKhau()%></td>
                             <td><%=docgia.getSoLuongTaiLieu()%></td>
                             <td><%=docgia.getSoLuongMoiTaiLieu()%></td>
                             <td><%=docgia.getSoNgayMuon()%></td>
-                            <td><%=docgia.getSoDuTaiKhoan()%></td>
                             <td>
                                 <a 
-                                   href="sua_docgia.jsp?madg=<%=docgia.getMaDocGia()%>&hoten=<%=docgia.getHoTen()%>&gioitinh=<%=docgia.getGioiTinh()%>&ngaysinh=<%=docgia.getNgaySinh()%>&doituong=<%=docgia.getDoiTuong()%>&ngaycap=<%=docgia.getNgayCap()%>&ngayhethan=<%=docgia.getNgayHetHan()%>&matkhau=<%=docgia.getMatKhau()%>&soluongtailieu=<%=docgia.getSoLuongTaiLieu()%>&soluongmoitailieu=<%=docgia.getSoLuongMoiTaiLieu()%>&songaymuon=<%=docgia.getSoNgayMuon()%>&sodutaikhoan=<%=docgia.getSoDuTaiKhoan()%>"
+                                   href="sua_docgia.jsp?madg=<%=docgia.getMaDocGia()%>&hoten=<%=docgia.getHoTen()%>&gioitinh=<%=docgia.getGioiTinh()%>&ngaysinh=<%=docgia.getNgaySinh()%>&doituong=<%=docgia.getDoiTuong()%>&ngaycap=<%=docgia.getNgayCap()%>&ngayhethan=<%=docgia.getNgayHetHan()%>&soluongtailieu=<%=docgia.getSoLuongTaiLieu()%>&soluongmoitailieu=<%=docgia.getSoLuongMoiTaiLieu()%>&songaymuon=<%=docgia.getSoNgayMuon()%>"
                                    class="edit" title="Edit" data-toggle="tooltip"
                                 >
                                 <button type="button" class="btn btn-warning">
@@ -110,7 +130,13 @@
                         <%}%>
                     </tbody>
                 </table>
+                <%=mess==""?"":mess %>
             </div>
+            <div style="margin-left: 48%; <%=disable_butmess %>"> 
+                <div style="margin: 10px; color: red; margin-left: -13%"><%=mess==""?"":mess %></div>
+                <a href="DocGia_Servlet"><button style="height: 32px;line-height: 0px;margin:0px 0px 8px 2px;" type="" class="btn btn-primary add-new"><span class="glyphicon glyphicon-chevron-left"></span>  Quay Lại</button></a>
+            </div>
+        </div>
         </div> 
     </body>
 </html>

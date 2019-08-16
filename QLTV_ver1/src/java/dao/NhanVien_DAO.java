@@ -47,10 +47,33 @@ public class NhanVien_DAO {
         
         return nv;
     }
-    public ArrayList<NhanVien> getAll(){
+    public ArrayList<NhanVien> getAll_ThuThu(){
         ArrayList<NhanVien> list = new ArrayList<>();
         String q="Thủ Thư";
         String sql="select * from NhanVien where Quyen=N'"+q+"'";
+        try {
+            Statement st=conn.createStatement();
+            ResultSet rs=st.executeQuery(sql);
+            while(rs.next()){
+                String maNV = rs.getString("MaNhanVien");
+                String hoTen = rs.getString("HoTen");
+                String chucVu = rs.getString("ChucVu");
+                String taiKhoan = rs.getString("TaiKhoan");
+                String matKhau = rs.getString("MatKhau");
+                String quyen = rs.getString("Quyen");
+                NhanVien nv=new NhanVien(maNV, hoTen, chucVu, taiKhoan, matKhau, quyen);
+                list.add(nv);
+            }
+        }
+        catch (SQLException ex) {
+            Logger.getLogger(TaiLieu_DAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        return list;
+    }
+    public ArrayList<NhanVien> getAll(){
+        ArrayList<NhanVien> list = new ArrayList<>();
+        String sql="select * from NhanVien";
         try {
             Statement st=conn.createStatement();
             ResultSet rs=st.executeQuery(sql);

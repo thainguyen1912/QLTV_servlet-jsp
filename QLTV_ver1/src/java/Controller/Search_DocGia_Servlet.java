@@ -31,6 +31,7 @@ public class Search_DocGia_Servlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         ArrayList<DocGia> dg=dgdao.getDocGia(request.getParameter("madg_search"));
         request.setAttribute("list_dg", dg);
+        request.setAttribute("madg_search", request.getParameter("madg_search"));
         RequestDispatcher rq=request.getRequestDispatcher("docgia.jsp");
         rq.forward(request, response);
     }

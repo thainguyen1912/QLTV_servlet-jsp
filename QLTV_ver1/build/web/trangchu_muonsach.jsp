@@ -68,7 +68,7 @@
     if (list_tlm.size() >= 1) {
         style = "margin-left: 2.8%; margin-bottom: 8px; margin-top: 3%";
     } else {
-        style = "margin-left: 44%; margin-bottom: 8px; margin-top: 3%";
+        style = "margin-left: 41%; margin-bottom: 8px; margin-top: 3%";
     }
 
     String color_stlcdm = "";
@@ -93,8 +93,8 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="active table_hover"><a href="muonsach_madocgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Quản Lý Mượn Sách</a></li>
                 <li class="table_hover"><a href="trasach_madocgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Quản Lý Trả Sách</a></li>
                 <li class="table_hover"><a href="thongke_baocao.jsp"><span class="glyphicon glyphicon-indent-right"></span> Thống Kê, Báo Cáo</a></li>
@@ -151,11 +151,11 @@
                             <button style=""
                                     style="background-color: #30a5ff;"
                                     type="" class="btn btn-warning">
-                                <span class="glyphicon glyphicon-refresh"></span> Choose Another
+                                <span class="glyphicon glyphicon-refresh"></span> Chọn Độc Giả Khác
                             </button>
                         </a>
                     </div>
-                    <div style="float: left; margin: 2% 0% 0% 9%; <%=color_sodu%>">
+                    <div style="float: left; margin: 2% 0% 0% 7.5%; <%=color_sodu%>">
                         Số Dư Trong Tài Khoản:&emsp;<%=(double) context.getAttribute("sodu")%>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                         <button style="<%=disabled_add%>"
                                 style="background-color: #30a5ff;"
                                 type="" class="btn btn-primary">
-                            <span class="glyphicon glyphicon-download-alt"></span> Add New
+                            <span class="glyphicon glyphicon-download-alt"></span> Chọn Tài Liệu Mượn
                         </button>
                     </a>
 
@@ -175,7 +175,11 @@
 
                 <div class="col-sm-4" style="margin-left: 49.6%; margin-bottom: 8px; width: 136px; margin-top: 3%">
                     <%if (list_tlm.size() >= 1) {%>
-                        <a onclick="return xacNhan()" href="TaoPhieuMuon_Servlet?mapm=<%=maPhieuMuonMoi%>&madg=<%=dg.getMaDocGia()%>&manv=<%=manv%>&ngaymuon=<%=dateNow%>"><button  style="background-color: #30a5ff;" type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Save</button></a>
+                        <a onclick="return xacNhan()" href="TaoPhieuMuon_Servlet?mapm=<%=maPhieuMuonMoi%>&madg=<%=dg.getMaDocGia()%>&manv=<%=manv%>&ngaymuon=<%=dateNow%>">
+                            <button  style="background-color: #30a5ff;" type="submit" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-download-alt"></span> Lưu
+                            </button>
+                        </a>
                     <%}%>
                 </div> 
             </div>
@@ -190,7 +194,7 @@
                         <th>Tên Tài Liệu</th>
                         <th>Số Lượng Mượn</th>
                         <th>Giá Tiền</th>
-                        <th style="width: 182px">Actions</th>
+                        <th style="width: 182px">Thao Tác</th>
                         </tr>
                         </thead>
                         <tbody>

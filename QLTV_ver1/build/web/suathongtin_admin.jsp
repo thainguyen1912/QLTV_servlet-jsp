@@ -110,7 +110,11 @@
                                     </tbody>
                                 </table>    
                                 <div class="col-sm-4" style="margin-left: 26%">
-                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"><span class="glyphicon glyphicon-ok"></span> Cập Nhật</button></a>
+                                    <a>
+                                        <button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new">
+                                            <span class="glyphicon glyphicon-ok"></span> Cập Nhật
+                                        </button>
+                                    </a>
                                 </div>
                             </form>
                         </div>

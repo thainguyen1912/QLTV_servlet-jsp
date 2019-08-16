@@ -51,8 +51,8 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="active table_hover"><a href="muonsach_madocgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Quản Lý Mượn Sách</a></li>
                 <li class="table_hover"><a href="trasach_madocgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Quản Lý Trả Sách</a></li>
                 <li class="table_hover"><a href="thongke_baocao.jsp"><span class="glyphicon glyphicon-indent-right"></span> Thống Kê, Báo Cáo</a></li>
@@ -70,7 +70,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 style="width: 40%; margin-left: 30%" class="page-header">Quản Lý Mượn Sách</h1>
+                    <h1 style="width: 40%; margin-left: 31%" class="page-header">Quản Lý Mượn Sách</h1>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
         <div style="margin-left: 226px; width: 1100px" class="container">
             <div id="create_second" style="float: left; margin-top: 40px; display: block; margin-left: 8%">
                 <form action="Manager_MuonSach_Servlet" onsubmit="return checkAdd_muonsach_themtailieu()">
-                    <div id="left" style="float: left; margin-left: -4%">
+                    <div id="left" style="float: left; margin-left: -6%">
                         <div style="margin-left: 30px; margin-bottom: 10px; float: left">
                             Tên Tài Liệu
                             <select id="tentl" name="matl" style="height: 32px; border-radius: 4px; width: 168px" 
@@ -120,9 +120,15 @@
                             <input name="giatien" value="<%=giaTien%>" id="slcon" style="border-style: groove;border-radius: 4px;height: 32px; text-align: center; width: 80px" type="text" readonly="true">
                         </div>
                     </div>
-                    <div class="col-sm-4" style="margin-left: 35%; margin-top: 16px; margin-bottom: 8px;">
-                        <a href="trangchu_muonsach.jsp"><button style="background-color: #30a5ff; margin-right: 22%" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button></a>
-                        <button style="background-color: #30a5ff;" type="submit" class="btn btn-primary"><i class="fa fa-plus add"></i> Confirm</button>
+                    <div class="col-sm-4" style="margin-left: 32%; margin-top: 16px; margin-bottom: 8px;">
+                        <a href="trangchu_muonsach.jsp">
+                            <button style="background-color: #30a5ff; margin-right: 22%" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-left"></span> Hủy
+                            </button>
+                        </a>
+                        <button style="background-color: #30a5ff;" type="submit" class="btn btn-primary">
+                            <i class="fa fa-plus add"></i> Đăng Ký Mượn
+                        </button>
                     </div>
                 </form>
             </div>

@@ -109,8 +109,8 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="table_hover"><a href="muonsach_madocgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Quản Lý Mượn Sách</a></li>
                 <li class="active table_hover"><a href="trasach_madocgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Quản Lý Trả Sách</a></li>
                 <li class="table_hover"><a href="thongke_baocao.jsp"><span class="glyphicon glyphicon-indent-right"></span> Thống Kê, Báo Cáo</a></li>
@@ -128,7 +128,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 style="width: 40%; margin-left: 30%" class="page-header">Quản Lý Trả Sách</h1>
+                    <h1 style="width: 40%; margin-left: 32%" class="page-header">Quản Lý Trả Sách</h1>
                 </div>
             </div>
         </div>
@@ -139,13 +139,21 @@
                         <div style="margin: 10px 10px 10px 0px; float: left">
                             Mã Phiếu Mượn
                             <input name="mapm" value="<%=mapm %>" id="mapm"  style="width: 171px ;border-style: groove;border-radius: 4px;height: 32px" type="text" required>
-                            <a><button style="background-color: #30a5ff; height: 32px;line-height: 0px;margin-bottom: 4px;" type="" class="btn btn-info add-new"><span class="fa fa-search"></span>  Search</button></a>
+                            <a>
+                                <button style="background-color: #30a5ff; height: 32px;line-height: 0px;margin-bottom: 4px;" type="" class="btn btn-info add-new">
+                                    <span class="fa fa-search"></span>  Tìm
+                                </button>
+                            </a>
                         </div>
                     </form>
                     <div style="margin: 10px 10px 10px 22px; float: left">
                         Tên Độc Giả
                         <input name="tendg" value="<%=dg.getHoTen()%>"  style="border-style: groove;border-radius: 4px;height: 32px" type="text" readonly="true">
-                        <a  onclick="return xacNhan()" href="trasach_madocgia.jsp"><button style="background-color: #30a5ff; height: 32px;line-height: 0px;margin-bottom: 4px;" type="" class="btn btn-info add-new"><span class="glyphicon glyphicon-repeat"></span>  Change</button></a>
+                        <a  onclick="return xacNhan()" href="trasach_madocgia.jsp">
+                            <button style="height: 32px;line-height: 0px;margin-bottom: 4px;" type="" class="btn btn-warning">
+                                <span class="glyphicon glyphicon-repeat"></span>  Chọn Độc Giả Khác
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

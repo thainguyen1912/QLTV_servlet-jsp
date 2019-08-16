@@ -69,7 +69,11 @@
                     </div>
                 </div>  
                 <div style="float: left; margin-left: 39%; margin-top: 2%;">
-                    <a href="suathongtin_admin.jsp"><button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new"><span class="glyphicon glyphicon-pencil"></span>  Sửa Đổi Thông Tin</button></a>
+                    <a href="suathongtin_admin.jsp">
+                        <button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new">
+                            <span class="glyphicon glyphicon-pencil"></span>  Sửa Đổi Thông Tin
+                        </button>
+                    </a>
                 </div>
                 
         </div>

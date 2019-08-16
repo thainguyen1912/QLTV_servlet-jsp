@@ -26,8 +26,8 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="active table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="active table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="table_hover"><a href="muonsach_madocgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Quản Lý Mượn Sách</a></li>
                 <li class="table_hover"><a href="trasach_madocgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Quản Lý Trả Sách</a></li>
                 <li class="table_hover"><a href="thongke_baocao.jsp"><span class="glyphicon glyphicon-indent-right"></span> Thống Kê, Báo Cáo</a></li>
@@ -109,7 +109,11 @@
                                     </tbody>
                                 </table>    
                                 <div class="col-sm-4" style="margin-left: 26%">
-                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"> Update</button></a>
+                                    <a>
+                                        <button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new">
+                                            <span class="glyphicon glyphicon-ok"></span> Cập Nhật
+                                        </button>
+                                    </a>
                                 </div>
                             </form>
                         </div>

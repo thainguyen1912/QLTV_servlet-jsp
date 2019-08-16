@@ -34,8 +34,8 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_thuthu.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_thuthu.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="table_hover"><a href="muonsach_madocgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Quản Lý Mượn Sách</a></li>
                 <li class="active table_hover"><a href="trasach_madocgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Quản Lý Trả Sách</a></li>
                 <li class="table_hover"><a href="thongke_baocao.jsp"><span class="glyphicon glyphicon-indent-right"></span> Thống Kê, Báo Cáo</a></li>
@@ -62,7 +62,7 @@
                         <p style="float: left; margin: 6px; font-size: 16px">Mã Độc Giả</p>
                         <input value="<%=dg.getMaDocGia() %>" id="madg" name="madg" style="width: 174px; border-style: groove;border-radius: 4px;height: 32px;float: left" type="text" placeholder=" search here.." required>
                         <div style="float: left; margin-left: 10px">
-                            <a><button style="height: 31px;line-height: 2px;" type="submit" class="btn btn-primary"><span class="fa fa-search"></span>  Search</button></a>
+                            <a><button style="height: 31px;line-height: 2px;" type="submit" class="btn btn-primary"><span class="fa fa-search"></span>  Kiểm Tra</button></a>
                         </div>
                     </div>
                     <div style="clear: both; margin-left: 13%"><p style="color: deeppink;"> <%= (request.getAttribute("mess") == null ? "" : request.getAttribute("mess"))%></p></div>
@@ -101,7 +101,11 @@
                     </div>
                 </div>  
                 <div style="float: left; margin-left: 69.5%; margin-top: 2%">
-                    <a href="trangchu_trasach.jsp"><button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new"><span class="fa fa-arrow-circle-o-right"></span>  Continues</button></a>
+                    <a href="trangchu_trasach.jsp">
+                        <button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new">
+                            Xác Nhận <span class="glyphicon glyphicon-chevron-right"></span>
+                        </button>
+                    </a>
                 </div>    
                 
         </div>

@@ -56,12 +56,10 @@ public class Manager_DocGia_Servlet extends HttpServlet {
             String doituong=request.getParameter("doituong");
             Date ngaycap=Date.valueOf(request.getParameter("ngaycap"));
             Date ngayhethan=Date.valueOf(request.getParameter("ngayhethan"));
-            String matKhau = request.getParameter("matkhau");
             int soLuongTaiLieu=Integer.valueOf(request.getParameter("soluongtailieu"));
             int soLuongMoiTaiLieu=Integer.valueOf(request.getParameter("soluongmoitailieu"));
             int soNgayMuon=Integer.valueOf(request.getParameter("songaymuon"));
-            double soDuTaiKhoan=Double.valueOf(request.getParameter("sodutaikhoan"));
-            DocGia dg=new DocGia(madg, hoten, gioitinh, ngaysinh, doituong, ngaycap, ngayhethan, matKhau, soLuongTaiLieu, soLuongMoiTaiLieu, soNgayMuon, soDuTaiKhoan);
+            DocGia dg=new DocGia(madg, hoten, gioitinh, ngaysinh, doituong, ngaycap, ngayhethan, soLuongTaiLieu, soLuongMoiTaiLieu, soNgayMuon);
             dgdao.update_DocGia(dg);
             response.sendRedirect("DocGia_Servlet");
         }

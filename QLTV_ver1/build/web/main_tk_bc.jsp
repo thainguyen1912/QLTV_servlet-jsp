@@ -50,7 +50,7 @@
                             </div>
                             <div style="float: right; margin-right: 1px">    
                                 <a target="_blank" onclick="return search_check()" href="Export_Pdf?tt=<%=tt%>"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
-                                        <span class="fa fa-print mr-5"></span>In
+                                        <span class="fa fa-print mr-5"></span>In PDF
                                     </button></a>
                             </div>                        
                         </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div style="float: right; margin-right: 1px;margin-bottom: 10px">    
                         <a target="_blank" onclick="return search_check()" href="Export_Pdf_QuaHan"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
-                                <span class="fa fa-print mr-5"></span>In
+                                <span class="fa fa-print mr-5"></span>In PDF
                             </button></a>
                     </div> 
                     <table class="table table-bordered" id="table" style="border-radius: 10px;border-style: double;">
@@ -123,7 +123,7 @@
                     </div>
                     <div style="float: right; margin-right: 1px;margin-bottom: 10px">    
                         <a target="_blank" onclick="return search_check()" href="Export_DGTLMat"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
-                                <span class="fa fa-print mr-5"></span>In
+                                <span class="fa fa-print mr-5"></span>In PDF
                             </button></a>
                     </div> 
                     <table class="table table-bordered" id="table" style="border-radius: 10px;border-style: double;">

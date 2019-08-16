@@ -83,7 +83,7 @@ public class DocGia_DAO {
     public int update_DocGia(DocGia dg) {
         int n = 0;
         String sql = "update DocGia set HoTen=?, GioiTinh=?, NgaySinh=?,"
-                + " DoiTuong=?, NgayCap=?, NgayHetHan=?, MatKhau=?, SoLuongTaiLieu=?, SoLuongMoiTaiLieu=?, SoNgayMuon=?, SoDuTaiKhoan=? where MaDocGia=?";
+                + " DoiTuong=?, NgayCap=?, NgayHetHan=?, SoLuongTaiLieu=?, SoLuongMoiTaiLieu=?, SoNgayMuon=? where MaDocGia=?";
         try {
             PreparedStatement pre = conn.prepareStatement(sql);
             pre.setString(1, dg.getHoTen());
@@ -92,12 +92,10 @@ public class DocGia_DAO {
             pre.setString(4, dg.getDoiTuong());
             pre.setDate(5, dg.getNgayCap());
             pre.setDate(6, dg.getNgayHetHan());
-            pre.setString(7, dg.getMatKhau());
-            pre.setInt(8, dg.getSoLuongTaiLieu());
-            pre.setInt(9, dg.getSoLuongMoiTaiLieu());
-            pre.setInt(10, dg.getSoNgayMuon());
-            pre.setDouble(11, dg.getSoDuTaiKhoan());
-            pre.setString(12, dg.getMaDocGia());
+            pre.setInt(7, dg.getSoLuongTaiLieu());
+            pre.setInt(8, dg.getSoLuongMoiTaiLieu());
+            pre.setInt(9, dg.getSoNgayMuon());
+            pre.setString(10, dg.getMaDocGia());
             n = pre.executeUpdate();
         }
         catch (SQLException ex) {

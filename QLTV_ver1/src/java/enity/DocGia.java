@@ -36,6 +36,21 @@ public class DocGia {
         this.soDuTaiKhoan = soDuTaiKhoan;
     }
 
+    public DocGia(String maDocGia, String hoTen, short gioiTinh, Date ngaySinh, String doiTuong, Date ngayCap, Date ngayHetHan, int soLuongTaiLieu, int soLuongMoiTaiLieu, int soNgayMuon) {
+        this.maDocGia = maDocGia;
+        this.hoTen = hoTen;
+        this.gioiTinh = gioiTinh;
+        this.ngaySinh = ngaySinh;
+        this.doiTuong = doiTuong;
+        this.ngayCap = ngayCap;
+        this.ngayHetHan = ngayHetHan;
+        this.soLuongTaiLieu = soLuongTaiLieu;
+        this.soLuongMoiTaiLieu = soLuongMoiTaiLieu;
+        this.soNgayMuon = soNgayMuon;
+    }
+
+    
+    
     public String getMatKhau() {
         return MatKhau;
     }
