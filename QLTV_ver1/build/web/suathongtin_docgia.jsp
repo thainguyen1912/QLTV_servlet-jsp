@@ -25,9 +25,10 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="docgia_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_docgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Thông Tin Độc Giả</a></li>
-                <li class="active table_hover"><a href="suathongtin_docgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Sửa Thông Tin Độc Giả</a></li>
-                <li class="table_hover"><a href="docgia_naptaikhoan.jsp"><span class="glyphicon glyphicon-indent-right"></span> Nạp Tài Khoản</a></li>
+                <li class="table_hover"><a href="thongtin_docgia.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Độc Giả</a></li>
+                <li class="active table_hover"><a href="suathongtin_docgia.jsp"><span class="glyphicon glyphicon-edit"></span> Sửa Thông Tin Độc Giả</a></li>
+                <li class="table_hover"><a href="danhsach_tailieu_docgia.jsp"><span class="glyphicon glyphicon-list-alt"></span> Tài Liệu Đang Mượn</a></li>
+                <li class="table_hover"><a href="docgia_naptaikhoan.jsp"><span class="glyphicon glyphicon-usd"></span> Nạp Tài Khoản</a></li>
                 <li class="table_hover"><a  onclick="return xacNhan()" href="Logout_Servlet"><span class="glyphicon glyphicon-off"></span> Đăng Xuất</a></li>
             </ul>
         </div>
@@ -106,7 +107,7 @@
                                     </tbody>
                                 </table>    
                                 <div class="col-sm-4" style="margin-left: 26%">
-                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"> Update</button></a>
+                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"><span class="glyphicon glyphicon-ok"></span> Cập Nhật</button></a>
                                 </div>
                             </form>
                         </div>

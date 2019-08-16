@@ -45,9 +45,9 @@ public class Export_TaoPhieuMuon_Servlet extends HttpServlet {
                 doc.open();
                 Paragraph para=new Paragraph();
                 
-                BaseFont bf1 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_ver1\\web\\ttf\\arrusb.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-                BaseFont bf2 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_ver1\\web\\ttf\\UVNHuongQue_R.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-                BaseFont bf3 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_ver1\\web\\ttf\\UVNSaigon_R.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                BaseFont bf1 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_servlet-jsp\\QLTV_ver1\\web\\ttf\\arrusb.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                BaseFont bf2 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_servlet-jsp\\QLTV_ver1\\web\\ttf\\UVNHuongQue_R.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+                BaseFont bf3 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_servlet-jsp\\QLTV_ver1\\web\\ttf\\UVNSaigon_R.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                 
                 Font font1=new Font(Font.FontFamily.TIMES_ROMAN,16,Font.NORMAL);
                 Font font2=new Font(Font.FontFamily.TIMES_ROMAN,12,Font.NORMAL);

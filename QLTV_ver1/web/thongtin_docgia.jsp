@@ -36,10 +36,10 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="docgia_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="active table_hover"><a href="thongtin_docgia.jsp"><span class="glyphicon glyphicon-tasks"></span> Thông Tin Độc Giả</a></li>
-                <li class="table_hover"><a href="suathongtin_docgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Sửa Thông Tin Độc Giả</a></li>
-                <li class="table_hover"><a href="danhsach_tailieu_docgia.jsp"><span class="glyphicon glyphicon-transfer"></span> Tài Liệu Đang Mượn</a></li>
-                <li class="table_hover"><a href="docgia_naptaikhoan.jsp"><span class="glyphicon glyphicon-indent-right"></span> Nạp Tài Khoản</a></li>
+                <li class="active table_hover"><a href="thongtin_docgia.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Độc Giả</a></li>
+                <li class="table_hover"><a href="suathongtin_docgia.jsp"><span class="glyphicon glyphicon-edit"></span> Sửa Thông Tin Độc Giả</a></li>
+                <li class="table_hover"><a href="danhsach_tailieu_docgia.jsp"><span class="glyphicon glyphicon-list-alt"></span> Tài Liệu Đang Mượn</a></li>
+                <li class="table_hover"><a href="docgia_naptaikhoan.jsp"><span class="glyphicon glyphicon-usd"></span> Nạp Tài Khoản</a></li>
                 <li class="table_hover"><a  onclick="return xacNhan()" href="Logout_Servlet"><span class="glyphicon glyphicon-off"></span> Đăng Xuất</a></li>
             </ul>
         </div>
@@ -94,7 +94,7 @@
                     </div>
                 </div>  
                 <div style="float: left; margin-left: 41%; margin-top: 2%;">
-                    <a href="suathongtin_docgia.jsp"><button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new"><span class="fa fa-arrow-circle-o-right"></span>  Sửa Đổi Và Cập Nhật</button></a>
+                    <a href="suathongtin_docgia.jsp"><button style="background-color: #30a5ff;height: 31px;line-height: 2px;" type="submit" class="btn btn-info add-new"><span class="glyphicon glyphicon-pencil"></span>  Sửa Đổi Thông Tin</button></a>
                 </div>
                 
         </div>

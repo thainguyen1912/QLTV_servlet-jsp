@@ -3,37 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Cancel_Edit_TaiLieuMuon_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/web/danhsach_tailieu_docgia.jsp</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/MatSach_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_TheLoai_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/DocGia_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Export_Pdf.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/web/thongtin_docgia.jsp</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/ThongTin_DocGia_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_MuonSach_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_TraSach_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Check_DocGia_Servlet_Tra.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/TaiLieu_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_DocGia_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_TaiLieu_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/ThongTin_ThuThu_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/web/tailieu.jsp</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Check_DocGia_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/dao/PhieuMuonChiTiet_DAO.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Search_NhanVien_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/TheLoai_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Search_PhieuMuon_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/TaoPhieuMuon_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Login_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Logout_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Search_TaiLieu_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Search_DocGia_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Manager_NhanVien_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/NhanVien_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/web/trangchu_trasach.jsp</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/Search_TheLoai_Servlet.java</file>
-            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_ver1/src/java/Controller/ThongTin_Admin_Servlet.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/main_tk_bc.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/muonsach_madocgia_submit.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/src/java/Controller/Export_DGTLMat.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/danhsach_tailieu_docgia.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/suathongtin_docgia.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/thongke_baocao.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/head.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/js/all.js</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/src/java/Controller/Export_TaoPhieuMuon_Servlet.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/thongtin_docgia.jsp</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/src/java/Controller/Export_Pdf_QuaHan.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/src/java/Controller/Export_Pdf.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/src/java/dao/PhieuMuonChiTiet_DAO.java</file>
+            <file>file:/D:/E/netbean_workspace/netbean_jsp-sevlet/QLTV_servlet-jsp/QLTV_ver1/web/docgia_naptaikhoan.jsp</file>
         </group>
     </open-files>
 </project-private>

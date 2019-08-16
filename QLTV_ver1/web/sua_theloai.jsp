@@ -56,8 +56,11 @@
                                 <%ServletContext context = getServletContext();
                                     context.setAttribute("context", "edit_thl");
                                 %>
-                                <div class="col-sm-4" style="margin-left: 26%">
-                                    <button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"> Update</button>
+                                <div class="col-sm-4" style="margin-left: 17%; float: left">
+                                    <a href="TheLoai_Servlet"><button style="background-color: #30a5ff;border-radius: 40px;" type="button" class="btn btn-info add-new"><span class="glyphicon glyphicon-menu-left"></span> Quay Lại</button></a>
+                                </div>
+                                <div class="col-sm-4" style="margin-left: 0%; float: left; width: 12%">
+                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"><span class="glyphicon glyphicon-pencil"></span> Sửa Đổi</button></a>
                                 </div>
                             </form>
                         </div>

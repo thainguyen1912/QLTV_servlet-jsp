@@ -31,6 +31,7 @@ public class Search_NhanVien_Servlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         ArrayList<NhanVien> nv=nvdao.getNhanVien(request.getParameter("manv_search"));
         request.setAttribute("list_nv", nv);
+        request.setAttribute("manv_search", request.getParameter("manv_search"));
         RequestDispatcher rq=request.getRequestDispatcher("nhanvien.jsp");
         rq.forward(request, response);
     }

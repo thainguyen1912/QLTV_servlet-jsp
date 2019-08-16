@@ -7,6 +7,29 @@
     context.setAttribute("context", "delete_tli");
     db_connection db = new db_connection();
     TheLoai_DAO thldao = new TheLoai_DAO(db);
+    ArrayList<TaiLieu> list_tli = (ArrayList<TaiLieu>) request.getAttribute("list_tli");
+    
+    String disable_table="display: block";
+    String mess="";
+    if(list_tli.size()==0){
+        disable_table="display: none";
+        mess="Không Tìm Thấy. Xin Kiểm Tra Lại!";
+    }
+    String matli_search="";
+    String matli="";
+    String disable_butmess="";
+    try{
+        matli=request.getAttribute("matl_search").toString();
+    }   
+    catch(Exception e){
+    }
+    if(matli!=""){
+        matli_search=matli;
+        disable_butmess="display: block";
+    }
+    else{
+        disable_butmess="display: none";
+    }
 %>
 <!DOCTYPE html>
 <html>
@@ -17,19 +40,16 @@
         <jsp:include page="head.jsp" />
     </head>
     <body>
-        <%
-            ArrayList<TaiLieu> list_tli = (ArrayList<TaiLieu>) request.getAttribute("list_tli");
-        %>
         <jsp:include page="title_admin.jsp" />
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_admin.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_admin.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_admin.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_admin.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="table_hover"><a href="TheLoai_Servlet"><span class="glyphicon glyphicon-th-list"></span> Quản Lý Thể Loại</a></li>
                 <li class="active table_hover"><a href="TaiLieu_Servlet"><span class="glyphicon glyphicon-book"></span> Quản Lý Tài Liệu</a></li>
                 <li class="table_hover"><a href="NhanVien_Servlet"><span class="glyphicon glyphicon-briefcase"></span> Quản Lý Nhân Viên</a></li>
-                <li class="table_hover"><a href="DocGia_Servlet"><span class="glyphicon glyphicon-user"></span> Quản Lý Độc Giả</a></li>
+                <li class="table_hover"><a href="DocGia_Servlet"><span class="glyphicon glyphicon-education"></span> Quản Lý Độc Giả</a></li>
                 <li class="table_hover"><a  onclick="return xacNhan()" href="Logout_Servlet"><span class="glyphicon glyphicon-off"></span> Đăng Xuất</a></li>
             </ul>
         </div>
@@ -55,15 +75,16 @@
                         <div style="width: 40%; float: left" class="col-sm-8"><h2>Danh Sách <b>Tài Liệu</b></h2></div>
                         <form action="Search_TaiLieu_Servlet">
                             <div style="width:48%; float: left">
-                                <input id="matl" type="text" name="matl_search" style="font-size: 14px;border-radius: 4px;height: 30px;border-style: groove;width: 220px; margin-left: 38%;" placeholder="  search here.. " required>
-                                <a><button style="background-color: #30a5ff" type="" class="btn btn-info add-new"><span class="fa fa-search"></span>  Search</button></a>
+                                <input value="<%=matli_search %>" id="matl" type="text" name="matl_search" style="font-size: 14px;border-radius: 4px;height: 30px;border-style: groove;width: 220px; margin-left: 38%;" placeholder="  search here.. " required>
+                                <a><button style="background-color: #30a5ff" type="" class="btn btn-info add-new"><span class="fa fa-search"></span>  Tìm</button></a>
                             </div>
                         </form>
                         <div style="width: 12%" class="col-sm-4">
-                            <a href="them_tailieu.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                            <a href="them_tailieu.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Thêm</button></a>
                         </div>
                     </div>
                 </div>
+                <div style=" <%=disable_table %>">
                 <table class="table table-bordered table_hover" id="table" style="border-radius:14px;border-style: hidden ">
                     <thead>
                         <tr>
@@ -75,7 +96,7 @@
                             <th>Năm Xuất Bản</th>
                             <th>Tác Giả</th>
                             <th>Giá Tiền</th>
-                            <th style="width: 17%">Actions</th>
+                            <th style="width: 17%">Thao Tác</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -105,6 +126,12 @@
                         <%}%>
                     </tbody>
                 </table>
+                <%=mess==""?"":mess %>
+            </div>
+            <div style="margin-left: 48%; <%=disable_butmess %>"> 
+                <div style="margin: 10px; color: red; margin-left: -13%"><%=mess==""?"":mess %></div>
+                <a href="TaiLieu_Servlet"><button style="height: 32px;line-height: 0px;margin:0px 0px 8px 2px;" type="" class="btn btn-primary add-new"><span class="glyphicon glyphicon-chevron-left"></span>  Quay Lại</button></a>
+            </div>
             </div>
         </div> 
     </body>

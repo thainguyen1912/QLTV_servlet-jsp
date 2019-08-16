@@ -84,15 +84,18 @@
                                             <td><input type="text" class="form-control" name="matkhau" id="matkhau" required></td>
                                             <td>
                                                 <select name="quyen" style="border: 1px solid #ddd; height: 46px;width: 100%;border-radius: 5px">
-                                                    <option selected>Admin</option>
-                                                    <option>Thủ Thư</option>
+                                                    <option >Admin</option>
+                                                    <option selected>Thủ Thư</option>
                                                 </select> 
                                             </td>
                                         </tr> 
                                     </tbody>
                                 </table>    
-                                <div class="col-sm-4" style="margin-left: 26%">
-                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"><i class="fa fa-plus add"></i> Add New</button></a>
+                                <div class="col-sm-4" style="margin-left: 17%; float: left">
+                                    <a href="NhanVien_Servlet"><button style="background-color: #30a5ff;border-radius: 40px;" type="button" class="btn btn-info add-new"><span class="glyphicon glyphicon-menu-left"></span> Quay Lại</button></a>
+                                </div>
+                                <div class="col-sm-4" style="margin-left: 0%; float: left; width: 12%">
+                                    <a><button style="background-color: #30a5ff;border-radius: 40px;" type="submit" class="btn btn-info add-new"><i class="fa fa-plus add"></i> Thêm</button></a>
                                 </div>
                             </form>
                             <%ServletContext context = getServletContext();

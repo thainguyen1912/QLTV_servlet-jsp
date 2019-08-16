@@ -47,7 +47,7 @@ public class ThongTin_DocGia_Servlet extends HttpServlet {
             if(maThe.equals("a50")){
                 double soDuBanDau=dg.getSoDuTaiKhoan();
                 dgdao.update_SoDuTaiKhoan(soDuBanDau + 50000, madg);
-                request.setAttribute("mess_t", "Nạp Tiền Thành Công!");
+                request.setAttribute("mess_t", "Nạp Tiền Thành Công. Tài khoản của bạn được cộng thêm:  50000" );
                 RequestDispatcher rq=request.getRequestDispatcher("docgia_naptaikhoan.jsp");
                 rq.forward(request, response);
             }

@@ -229,4 +229,22 @@ public class PhieuMuonChiTiet_DAO {
         }
         return rs;
     }
+    
+    
+    public ResultSet DanhSachMatSach() {
+        String sql = "select DocGia.MaDocGia, DocGia.HoTen,TaiLieu.MaTaiLieu, TaiLieu.TenTaiLieu,TaiLieu.GiaTien, count(PhieuMuonChiTiet.MaTaiLieu) as 'SoLuongMat', PhieuMuonChiTiet.NgayTra from PhieuMuonChiTiet, PhieuMuon, DocGia, TaiLieu\n" +
+"where PhieuMuonChiTiet.MaPhieuMuon=PhieuMuon.MaPhieuMuon and\n" +
+"PhieuMuonChiTiet.MaTaiLieu=TaiLieu.MaTaiLieu and\n" +
+"DocGia.MaDocGia=PhieuMuon.MaDocGia and PhieuMuonChiTiet.NgayTra is not null\n" +
+"and PhieuMuonChiTiet.Mat='1' \n" +
+"group by DocGia.MaDocGia, DocGia.HoTen, TaiLieu.MaTaiLieu, TaiLieu.TenTaiLieu, TaiLieu.GiaTien, PhieuMuonChiTiet.NgayTra";
+        ResultSet rs = null;
+        try {
+            Statement st = conn.createStatement();
+            rs = st.executeQuery(sql);
+        } catch (SQLException ex) {
+            Logger.getLogger(TheLoai_DAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return rs;
+    }
 }

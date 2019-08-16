@@ -20,23 +20,24 @@ import dao.PhieuMuonChiTiet_DAO;
 import dao.db_connection;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.text.SimpleDateFormat;
 
 /**
  *
  * @author thain
  */
-public class Export_Pdf_QuaHan extends HttpServlet {
+public class Export_DGTLMat extends HttpServlet {
+
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            
         response.setContentType("application/pdf;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
         response.setCharacterEncoding("UTF-8");
@@ -58,7 +59,7 @@ public class Export_Pdf_QuaHan extends HttpServlet {
                 
                 Font font1=new Font(Font.FontFamily.TIMES_ROMAN,16,Font.NORMAL);
                 Font font2=new Font(Font.FontFamily.TIMES_ROMAN,12,Font.NORMAL);
-                para.add(new Phrase("Danh Sách Thống Kê Tài Liệu Quá Hạn", new Font(bf1,20)));
+                para.add(new Phrase("Danh Sách Thống Kê Độc Giả Và Tài Liệu Bị Mất", new Font(bf1,20)));
                 para.add(new Phrase(Chunk.NEWLINE));
                 para.add(new Phrase("Ngày "+ dateNow, new Font(bf1,12)));
                 para.add(new Phrase(Chunk.NEWLINE));
@@ -73,19 +74,19 @@ public class Export_Pdf_QuaHan extends HttpServlet {
                 table.addCell(cell1);
                 PdfPCell cell2=new PdfPCell(new Paragraph("Tên Độc Giả", new Font(bf1, 12)));
                 table.addCell(cell2);
-                PdfPCell cell3=new PdfPCell(new Paragraph("Mã Phiếu Mượn", new Font(bf1, 12)));
+                PdfPCell cell3=new PdfPCell(new Paragraph("Mã Tài Liệu", new Font(bf1, 12)));
                 table.addCell(cell3);
                 PdfPCell cell4=new PdfPCell(new Paragraph("Tên Tài Liệu", new Font(bf1, 12)));
                 table.addCell(cell4);
-                PdfPCell cell5=new PdfPCell(new Paragraph("Số Lượng Mượn", new Font(bf1, 12)));
+                PdfPCell cell5=new PdfPCell(new Paragraph("Giá Tiền", new Font(bf1, 12)));
                 table.addCell(cell5);
-                PdfPCell cell6=new PdfPCell(new Paragraph("Ngày Mượn", new Font(bf1, 12)));
+                PdfPCell cell6=new PdfPCell(new Paragraph("Số Lượng Mất", new Font(bf1, 12)));
                 table.addCell(cell6);
-                PdfPCell cell7=new PdfPCell(new Paragraph("Số Ngày Quá Hạn", new Font(bf1, 12)));
+                PdfPCell cell7=new PdfPCell(new Paragraph("Ngày Báo Mất", new Font(bf1, 12)));
                 table.addCell(cell7);
                 db_connection db=new db_connection();
                 PhieuMuonChiTiet_DAO pmctdao=new PhieuMuonChiTiet_DAO(db);
-                ResultSet rs=pmctdao.displayTLQuaHan();
+                ResultSet rs=pmctdao.DanhSachMatSach();
                 while(rs.next()){
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(1).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(2).toString(), new Font(bf3,12))));
@@ -94,6 +95,7 @@ public class Export_Pdf_QuaHan extends HttpServlet {
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(5).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(6).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(7).toString(), new Font(bf3,12))));
+                    
                 }
                 doc.add(table);
                 Paragraph para1=new Paragraph();
@@ -110,6 +112,7 @@ public class Export_Pdf_QuaHan extends HttpServlet {
             out.close();
         }
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

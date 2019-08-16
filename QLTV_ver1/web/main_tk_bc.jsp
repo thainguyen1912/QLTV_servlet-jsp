@@ -5,6 +5,7 @@
     db_connection db = new db_connection();
     PhieuMuonChiTiet_DAO pmctdao = new PhieuMuonChiTiet_DAO(db);
     ResultSet rs = pmctdao.displayTLQuaHan();
+    ResultSet rs_dstlm = pmctdao.DanhSachMatSach();//danh sach doc gia + tai lieu mat 
     String tt = "1";
     try {
         tt = request.getParameter("tt").toString();
@@ -28,6 +29,8 @@
                 <label for="tab1">Tài Liệu Mượn Nhiều</label>
                 <input type="radio" id="tab2" name="tabGroup1" class="tab">
                 <label for="tab2">Tài Liệu Mượn Quá Hạn</label>
+                <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                <label for="tab3">Độc Giả Và Tài Liệu Mất</label>
                 <div class="tab__content">
                     <div class="row">
                         <div class="col-lg-12">
@@ -46,7 +49,7 @@
                                 </select>
                             </div>
                             <div style="float: right; margin-right: 1px">    
-                                <a onclick="return search_check()" href="Export_Pdf?tt=<%=tt%>"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
+                                <a target="_blank" onclick="return search_check()" href="Export_Pdf?tt=<%=tt%>"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
                                         <span class="fa fa-print mr-5"></span>In
                                     </button></a>
                             </div>                        
@@ -80,7 +83,7 @@
                         </div>
                     </div>
                     <div style="float: right; margin-right: 1px;margin-bottom: 10px">    
-                        <a onclick="return search_check()" href="Export_Pdf_QuaHan"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
+                        <a target="_blank" onclick="return search_check()" href="Export_Pdf_QuaHan"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
                                 <span class="fa fa-print mr-5"></span>In
                             </button></a>
                     </div> 
@@ -106,6 +109,45 @@
                                 <td><%=rs.getString("SoluongMuon")%></td>
                                 <td><%=rs.getString("NgayMuon")%></td>
                                 <td><%=rs.getString("SoNgayQuaHan")%></td>
+                            </tr>
+                            <%}%>
+                        </tbody>
+                    </table>
+                </div>
+                        
+                <div class="tab__content">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 style=" margin-left: 26%; font-size: 32px" class="page-header">Danh Sách Độc Giả Và Tài Liệu Bị Mất</h1>
+                        </div>
+                    </div>
+                    <div style="float: right; margin-right: 1px;margin-bottom: 10px">    
+                        <a target="_blank" onclick="return search_check()" href="Export_DGTLMat"><button style="background-color: #30a5ff" type="" class="btn btn-info add-new">
+                                <span class="fa fa-print mr-5"></span>In
+                            </button></a>
+                    </div> 
+                    <table class="table table-bordered" id="table" style="border-radius: 10px;border-style: double;">
+                        <thead>
+                            <tr>
+                                <th style="">Mã Đôc Giả</th>
+                                <th style="">Tên Độc Giả</th>
+                                <th style="">Mã Tài Liệu</th>
+                                <th>Tên Tài Liệu</th>
+                                <th>Giá Tiền</th>
+                                <th>Số Lượng Mất</th>
+                                <th>Ngày Báo Mất</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <%while (rs_dstlm.next()) {%>
+                            <tr>
+                                <td><%=rs_dstlm.getString("MaDocGia")%></td>
+                                <td><%=rs_dstlm.getString("HoTen")%></td>
+                                <td><%=rs_dstlm.getString("MaTaiLieu")%></td>
+                                <td><%=rs_dstlm.getString("TenTaiLieu")%></td>
+                                <td><%=rs_dstlm.getString("GiaTien")%></td>
+                                <td><%=rs_dstlm.getString("SoLuongMat")%></td>
+                                <td><%=rs_dstlm.getString("NgayTra")%></td>
                             </tr>
                             <%}%>
                         </tbody>

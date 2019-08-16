@@ -116,6 +116,10 @@
         <servlet-name>ThongTin_ThuThu_Servlet</servlet-name>
         <servlet-class>Controller.ThongTin_ThuThu_Servlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Export_DGTLMat</servlet-name>
+        <servlet-class>Controller.Export_DGTLMat</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login_Servlet</servlet-name>
         <url-pattern>/Login_Servlet</url-pattern>
@@ -231,6 +235,10 @@
     <servlet-mapping>
         <servlet-name>ThongTin_ThuThu_Servlet</servlet-name>
         <url-pattern>/ThongTin_ThuThu_Servlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Export_DGTLMat</servlet-name>
+        <url-pattern>/Export_DGTLMat</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

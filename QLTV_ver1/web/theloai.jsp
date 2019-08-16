@@ -12,7 +12,7 @@
     String mess="";
     if(list_tl.size()==0){
         disable_table="display: none";
-        mess="Not Find";
+        mess="Không Tìm Thấy. Xin Kiểm Tra Lại!";
     }
     String mathl_search="";
     String mathl="";
@@ -44,12 +44,12 @@
         <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
             <jsp:include page="user_status.jsp" />
             <ul class="nav menu" style="margin: 0px">
-                <li class="table_hover"><a href="thongtin_admin.jsp"><span class="glyphicon glyphicon-th-list"></span> Thông Tin Cá Nhân</a></li>
-                <li class="table_hover"><a href="suathongtin_admin.jsp"><span class="glyphicon glyphicon-th-list"></span> Sửa Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="thongtin_admin.jsp"><span class="glyphicon glyphicon-user"></span> Thông Tin Cá Nhân</a></li>
+                <li class="table_hover"><a href="suathongtin_admin.jsp"><span class="glyphicon glyphicon-pencil"></span> Sửa Thông Tin Cá Nhân</a></li>
                 <li class="active table_hover"><a href="TheLoai_Servlet"><span class="glyphicon glyphicon-th-list"></span> Quản Lý Thể Loại</a></li>
                 <li class="table_hover"><a href="TaiLieu_Servlet"><span class="glyphicon glyphicon-book"></span> Quản Lý Tài Liệu</a></li>
                 <li class="table_hover"><a href="NhanVien_Servlet"><span class="glyphicon glyphicon-briefcase"></span> Quản Lý Nhân Viên</a></li>
-                <li class="table_hover"><a href="DocGia_Servlet"><span class="glyphicon glyphicon-user"></span> Quản Lý Độc Giả</a></li>
+                <li class="table_hover"><a href="DocGia_Servlet"><span class="glyphicon glyphicon-education"></span> Quản Lý Độc Giả</a></li>
                 <li class="table_hover"><a  onclick="return xacNhan()" href="Logout_Servlet"><span class="glyphicon glyphicon-off"></span> Đăng Xuất</a></li>
             </ul>
         </div>
@@ -76,11 +76,11 @@
                         <form action="Search_TheLoai_Servlet">
                             <div style="width:48%; float: left">
                                 <input value="<%=mathl_search %>" id="mathl"  type="text" name="mathl_search" style="font-size: 14px;border-radius: 4px;height: 30px;border-style: groove;width: 220px; margin-left: 38%;" placeholder="  search here.. " required>
-                                <a><button style="background-color: #30a5ff" type="submit" class="btn btn-info add-new"><span class="fa fa-search"></span>  Search</button></a>
+                                <a><button style="background-color: #30a5ff" type="submit" class="btn btn-info add-new"><span class="fa fa-search"></span>  Tìm</button></a>
                             </div>
                         </form>
                         <div style="width: 12%" class="col-sm-4">
-                            <a href="them_theloai.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button></a>
+                            <a href="them_theloai.jsp"><button style="background-color: #30a5ff" type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i>Thêm</button></a>
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                             <th>Mã Thể Loại</th>
                             <th>Tên Thể Loại</th>
                             <th>Ghi Chú</th>
-                            <th style="width: 180px">Actions</th>
+                            <th style="width: 180px">Thao Tác</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -118,9 +118,9 @@
                 </table>
                 <%=mess==""?"":mess %>
             </div>
-            <div style="margin-left: 50%; <%=disable_butmess %>"> 
-                <div style="margin: 10px; color: red"><%=mess==""?"":mess %></div>
-                <a href="TheLoai_Servlet"><button style="height: 32px;line-height: 0px;margin:0px 0px 8px 2px;" type="" class="btn btn-primary add-new"><span class="glyphicon glyphicon-chevron-left"></span>  Back</button></a>
+            <div style="margin-left: 48%; <%=disable_butmess %>"> 
+                <div style="margin: 10px; color: red; margin-left: -13%"><%=mess==""?"":mess %></div>
+                <a href="TheLoai_Servlet"><button style="height: 32px;line-height: 0px;margin:0px 0px 8px 2px;" type="" class="btn btn-primary add-new"><span class="glyphicon glyphicon-chevron-left"></span>  Quay Lại</button></a>
             </div>
             </div>
         </div>  

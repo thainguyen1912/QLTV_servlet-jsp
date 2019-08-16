@@ -31,6 +31,7 @@ public class Search_TaiLieu_Servlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         ArrayList<TaiLieu> tl=tlidao.getTaiLieu(request.getParameter("matl_search"));
         request.setAttribute("list_tli", tl);
+        request.setAttribute("matl_search", request.getParameter("matl_search"));
         RequestDispatcher rq=request.getRequestDispatcher("tailieu.jsp");
         rq.forward(request, response);
     }
