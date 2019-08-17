@@ -10,6 +10,7 @@ import dao.PhieuMuonChiTiet_DAO;
 import dao.PhieuMuon_DAO;
 import dao.TaiLieu_DAO;
 import dao.db_connection;
+import enity.DocGia;
 import enity.PhieuMuon;
 import enity.PhieuMuonChiTiet;
 import enity.TaiLieuMuon;
@@ -62,6 +63,18 @@ public class TaoPhieuMuon_Servlet extends HttpServlet {
             context.setAttribute("list_tlm", list_tlm);
 //            response.sendRedirect("trangchu_muonsach.jsp");
             request.setAttribute("mapm", mapm);
+            request.setAttribute("madg", madg);
+            request.setAttribute("tendg", dgdao.getOneDocGia(madg).getHoTen());
+            request.setAttribute("tongtien", context.getAttribute("tongtien"));
+            
+            DocGia dg=dgdao.getOneDocGia(madg);
+            context.setAttribute("docgia", dg);
+            context.setAttribute("tongtien", 0);
+            context.setAttribute("sodu", dg.getSoDuTaiKhoan());
+            int soTaiLieuConDuocMuon=dg.getSoLuongTaiLieu() /*-  dgdao.getSoLuongTaiLieu(dg.getMaDocGia())*/;
+            context.setAttribute("stlcdm", soTaiLieuConDuocMuon);
+           
+            
             RequestDispatcher rd=request.getRequestDispatcher("Export_TaoPhieuMuon_Servlet");
             rd.forward(request, response);
             

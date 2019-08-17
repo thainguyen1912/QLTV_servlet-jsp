@@ -11,36 +11,29 @@
     TaiLieu_DAO tldao = new TaiLieu_DAO(db);
     ArrayList<String> list_matli = tldao.getAllMaTaiLieu();
     ArrayList<String> list_tentli = tldao.getAllTenTaiLieu();
-    String matl = "";
-
-    try {
-        matl = request.getParameter("matl").toString();
-    } catch (Exception e) {
-    }
-    int slcon = tldao.getSoLuongCon(matl);
-    double giaTien=tldao.getGiaTien(matl);
+    
+    
+    //truoc khi remove list_tlm(i)
+    int stlcdm=Integer.valueOf(context.getAttribute("stlcdm").toString());
+    double tongTien=Double.valueOf(context.getAttribute("tongtien").toString());
+    double soDu=Double.valueOf(context.getAttribute("sodu").toString());
+    
     //
     String matlm = "";
     matlm = request.getParameter("matlm");
+    int slm_re=Integer.valueOf(request.getParameter("slm"));
     int slcon_edit = tldao.getSoLuongCon(matlm);
     double gt=Double.valueOf(request.getParameter("giaTien"));
     //
-    ArrayList<Integer> list_slmuon = new ArrayList<Integer>();
-    if (slcon >= 2 || slcon_edit >= 2) {
-        list_slmuon.add(1);
-        list_slmuon.add(2);
-    }
-    if (slcon == 1 || slcon_edit == 1) {
-        list_slmuon.add(1);
-    }
-
-    String selected = "";
-    String selected_edit = "";
-    String slm = "";
+    //set lai gia tri cho list khi click cancel
+    context.setAttribute("cancel_stlcdm", stlcdm);
+    context.setAttribute("cancel_tongtien", tongTien);
+    context.setAttribute("cancel_sodu", soDu);
+    context.setAttribute("cancel_matlm", request.getParameter("matlm").toString());
+    context.setAttribute("cancel_tentlm", request.getParameter("tentlm").toString());
+    context.setAttribute("cancel_slm", Integer.valueOf(request.getParameter("slm").toString()));
+    context.setAttribute("cancel_giatien", Double.valueOf(request.getParameter("giaTien").toString()));
     
-    double tongTien=Double.valueOf(context.getAttribute("tongtien").toString());
-    int stlcdm = Integer.valueOf(context.getAttribute("stlcdm").toString());
-    double soDu=Double.valueOf(context.getAttribute("sodu").toString());
     
     
     ArrayList<TaiLieuMuon> list_tlm = null;
@@ -57,6 +50,31 @@
             list_tlm.remove(i);
         }
     }
+    
+    //sau khi remove list_tlm(i)
+     stlcdm=Integer.valueOf(context.getAttribute("stlcdm").toString());
+     tongTien=Double.valueOf(context.getAttribute("tongtien").toString());
+     soDu=Double.valueOf(context.getAttribute("sodu").toString());
+    
+    ArrayList<Integer> list_slmuon = new ArrayList<Integer>();
+    
+    if (slcon_edit >= 2) {
+        if(stlcdm <= 1){
+            list_slmuon.add(1);
+        }
+        if(stlcdm >=2){
+            list_slmuon.add(1);
+            list_slmuon.add(2);
+        }
+    }
+    if (slcon_edit <= 1) {
+        list_slmuon.add(1);
+    }
+
+    String selected = "";
+    String slm = "";
+    
+    
     
 %>
 <!DOCTYPE html>
@@ -111,18 +129,13 @@
                                 <option value="" disabled selected hidden> select here..</option>    
                                 <%for (int i = 0; i < list_matli.size(); i++) {%>
                                 <%
-                                    if (list_matli.get(i).toString().equals(matl)) {
+                                    if (list_matli.get(i).toString().equals(matlm)) {
                                         selected = "selected";
                                     } else {
                                         selected = "";
                                     }
-                                    if (list_matli.get(i).toString().equals(request.getParameter("matlm"))) {
-                                        selected_edit = "selected";
-                                    } else {
-                                        selected_edit = "";
-                                    }
                                 %>
-                                <option <%=selected%> <%=selected_edit%> value="<%=list_matli.get(i)%>"><%=list_tentli.get(i)%></option>
+                                <option <%=selected%> value="<%=list_matli.get(i)%>"><%=list_tentli.get(i)%></option>
                                 <%}%>
                             </select>
                         </div>
@@ -151,8 +164,14 @@
                         </div>  
                     </div>
                     <div class="col-sm-4" style="margin-left: 35%; margin-top: 16px; margin-bottom: 8px;">
-                        <a href="Cancel_Edit_TaiLieuMuon_Servlet"><button style="background-color: #30a5ff; margin-right: 22%" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-left"></span> Cancel</button></a>
-                        <button style="background-color: #30a5ff;" type="submit" class="btn btn-primary"><i class="fa fa-plus add"></i> Confirm</button>
+                        <a href="Cancel_Edit_TaiLieuMuon_Servlet">
+                            <button style="background-color: #30a5ff; margin-right: 22%" type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-chevron-left"></span> Hủy
+                            </button>
+                        </a>
+                        <button style="background-color: #30a5ff;" type="submit" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-ok"></span> Xác Nhận Sửa
+                        </button>
                     </div>
                 </form>
             </div>

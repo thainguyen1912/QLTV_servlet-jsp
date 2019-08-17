@@ -49,6 +49,9 @@ public class Export_TaoPhieuMuon_Servlet extends HttpServlet {
                 BaseFont bf2 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_servlet-jsp\\QLTV_ver1\\web\\ttf\\UVNHuongQue_R.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                 BaseFont bf3 = BaseFont.createFont("D:\\E\\netbean_workspace\\netbean_jsp-sevlet\\QLTV_servlet-jsp\\QLTV_ver1\\web\\ttf\\UVNSaigon_R.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
                 
+                
+                
+                
                 Font font1=new Font(Font.FontFamily.TIMES_ROMAN,16,Font.NORMAL);
                 Font font2=new Font(Font.FontFamily.TIMES_ROMAN,12,Font.NORMAL);
                 para.add(new Phrase("Hóa Đơn Mượn Sách", new Font(bf1, 20)));
@@ -56,18 +59,20 @@ public class Export_TaoPhieuMuon_Servlet extends HttpServlet {
                 para.add(new Phrase("Ngày "+ dateNow, new Font(bf1, 12)));
                 para.add(new Phrase(Chunk.NEWLINE));
                 para.add(new Phrase("-----------------------------------------------", font1));
+                
+                para.add(new Phrase(Chunk.NEWLINE));
+                para.add(new Phrase("Mã Phiếu Mượn:  " + request.getAttribute("mapm"), new Font(bf1, 10)));
+                para.add(new Phrase(Chunk.NEWLINE));
+                para.add(new Phrase("Mã Độc Giả:  " + request.getAttribute("madg"), new Font(bf1, 10)));
+                para.add(new Phrase(Chunk.NEWLINE));
+                para.add(new Phrase("Họ Tên:  " + request.getAttribute("tendg"), new Font(bf1, 10)));
+                para.add(new Phrase(Chunk.NEWLINE));
+                para.add(new Phrase(Chunk.NEWLINE));
                 para.setAlignment(Element.ALIGN_CENTER);
-                para.add(new Phrase(Chunk.NEWLINE));
-                para.add(new Phrase(Chunk.NEWLINE));
+                
                 doc.add(para);
-                PdfPTable table=new PdfPTable(7);
+                PdfPTable table=new PdfPTable(4);
                 table.setWidthPercentage(100);
-                PdfPCell cell1=new PdfPCell(new Paragraph("Mã Phiếu Mượn", new Font(bf1, 10)));
-                table.addCell(cell1);
-                PdfPCell cell2=new PdfPCell(new Paragraph("Mã Độc Giả",  new Font(bf1, 10)));
-                table.addCell(cell2);
-                PdfPCell cell3=new PdfPCell(new Paragraph("Họ Tên",  new Font(bf1, 10)));
-                table.addCell(cell3);
                 PdfPCell cell4=new PdfPCell(new Paragraph("Mã Tài Liệu",  new Font(bf1, 10)));
                 table.addCell(cell4);
                 PdfPCell cell5=new PdfPCell(new Paragraph("Tên Tài Liệu",  new Font(bf1, 10)));
@@ -82,9 +87,6 @@ public class Export_TaoPhieuMuon_Servlet extends HttpServlet {
                 PhieuMuonChiTiet_DAO pmctdao=new PhieuMuonChiTiet_DAO(db);
                 ResultSet rs=pmctdao.displayHoaDon(request.getParameter("mapm").toString());
                 while(rs.next()){
-                    table.addCell(new PdfPCell(new Paragraph(rs.getString(1).toString(), new Font(bf3,12))));
-                    table.addCell(new PdfPCell(new Paragraph(rs.getString(2).toString(), new Font(bf3,12))));
-                    table.addCell(new PdfPCell(new Paragraph(rs.getString(3).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(4).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(5).toString(), new Font(bf3,12))));
                     table.addCell(new PdfPCell(new Paragraph(rs.getString(6).toString(), new Font(bf3,12))));
@@ -96,7 +98,9 @@ public class Export_TaoPhieuMuon_Servlet extends HttpServlet {
                 
                 Paragraph para1=new Paragraph();
                 para1.add(new Phrase(Chunk.NEWLINE));
-                para1.add(new Phrase("                                                                                                                                                    Thủ Thư Ký Tên  ", new Font(bf3, 10)));
+                para1.add(new Phrase("Tổng Tiền Mượn:  " + request.getAttribute("tongtien"), new Font(bf1, 10)));
+                para1.add(new Phrase(Chunk.NEWLINE));
+                para1.add(new Phrase("                                                                                                                                                         Thủ Thư Ký Tên  ", new Font(bf3, 10)));
                 
                 
                 para1.add(new Phrase(Chunk.NEWLINE));

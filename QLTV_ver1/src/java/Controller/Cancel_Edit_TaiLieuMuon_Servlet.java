@@ -5,8 +5,11 @@
  */
 package Controller;
 
+import enity.TaiLieuMuon;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -22,8 +25,26 @@ public class Cancel_Edit_TaiLieuMuon_Servlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         request.setCharacterEncoding("UTF-8");
+        ServletContext context = getServletContext();
+        ArrayList<TaiLieuMuon> list_tlm = (ArrayList<TaiLieuMuon>) context.getAttribute("list_tlm");
         
+        int cancel_stlcdm =Integer.valueOf(context.getAttribute("cancel_stlcdm").toString());
+        double cancel_tongtien =Double.valueOf(context.getAttribute("cancel_tongtien").toString());
+        double cancel_sodu = Double.valueOf(context.getAttribute("cancel_sodu").toString());
+        String cancel_matlm = context.getAttribute("cancel_matlm").toString();
+        String cancel_tentlm = context.getAttribute("cancel_tentlm").toString();
+        int cancel_slm =Integer.valueOf(context.getAttribute("cancel_slm").toString());
+        double cancel_giatien = Double.valueOf(context.getAttribute("cancel_giatien").toString());
         
+        context.setAttribute("tongtien", cancel_tongtien);
+        context.setAttribute("stlcdm", cancel_stlcdm);
+        context.setAttribute("sodu", cancel_sodu);
+        
+        TaiLieuMuon tlm = new TaiLieuMuon(cancel_matlm, cancel_tentlm, cancel_slm, cancel_giatien);
+        list_tlm.add(tlm);
+        context.setAttribute("list_tlm", list_tlm);
+        RequestDispatcher rd = request.getRequestDispatcher("trangchu_muonsach.jsp");
+        rd.forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

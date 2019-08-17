@@ -75,7 +75,7 @@
             </div>
         </div>
         <div style="float:left; margin: 2% 0% 0% 50%;">
-                Số Tài Liệu Còn Được Mượn:&emsp;<%=stlcdm %>
+            Số Tài Liệu Còn Được Mượn:&emsp;<%=stlcdm %>
         </div>
         <div style="float:left; margin: 2% 0% 0% 50%;">
             <a href="muonsach_suatailieu.jsp"></a>

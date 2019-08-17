@@ -68,7 +68,7 @@
     if (list_tlm.size() >= 1) {
         style = "margin-left: 2.8%; margin-bottom: 8px; margin-top: 3%";
     } else {
-        style = "margin-left: 41%; margin-bottom: 8px; margin-top: 3%";
+        style = "margin-left: 41.5%; margin-bottom: 8px; margin-top: 3%";
     }
 
     String color_stlcdm = "";
@@ -79,6 +79,8 @@
     if (soDu <= 0) {
         color_sodu = "color: red";
     }
+    
+    System.out.println("size tlm" + list_tlm.size());
 %>
 <!DOCTYPE html>
 <html>
@@ -167,7 +169,7 @@
                         <button style="<%=disabled_add%>"
                                 style="background-color: #30a5ff;"
                                 type="" class="btn btn-primary">
-                            <span class="glyphicon glyphicon-download-alt"></span> Chọn Tài Liệu Mượn
+                            <span class="glyphicon glyphicon-plus-sign"></span> Chọn Tài Liệu Mượn
                         </button>
                     </a>
 
@@ -175,9 +177,9 @@
 
                 <div class="col-sm-4" style="margin-left: 49.6%; margin-bottom: 8px; width: 136px; margin-top: 3%">
                     <%if (list_tlm.size() >= 1) {%>
-                        <a onclick="return xacNhan()" href="TaoPhieuMuon_Servlet?mapm=<%=maPhieuMuonMoi%>&madg=<%=dg.getMaDocGia()%>&manv=<%=manv%>&ngaymuon=<%=dateNow%>">
+                    <a onclick="return xacNhan()" href="TaoPhieuMuon_Servlet?mapm=<%=maPhieuMuonMoi%>&madg=<%=dg.getMaDocGia()%>&manv=<%=manv%>&ngaymuon=<%=dateNow%>">
                             <button  style="background-color: #30a5ff;" type="submit" class="btn btn-primary">
-                                <span class="glyphicon glyphicon-download-alt"></span> Lưu
+                                <span class="glyphicon glyphicon-ok-sign"></span> Lưu
                             </button>
                         </a>
                     <%}%>

@@ -75,7 +75,7 @@ public class Manager_MuonSach_Servlet extends HttpServlet {
                         list_tlm.add(tlm);
                         double tongTien=Double.valueOf(context.getAttribute("tongtien").toString());
                         context.setAttribute("tongtien", tongTien+giaTien*slmuon);
-                        request.setAttribute("tlm", list_tlm);
+                        context.setAttribute("list_tlm", list_tlm);
                         int soTaiLieuConDuocMuon=Integer.valueOf(context.getAttribute("stlcdm").toString());
                         context.setAttribute("stlcdm", soTaiLieuConDuocMuon - slmuon);
                         RequestDispatcher rd = request.getRequestDispatcher("trangchu_muonsach.jsp");
@@ -101,7 +101,7 @@ public class Manager_MuonSach_Servlet extends HttpServlet {
                     list_tlm.remove(i);
                 }
             }
-            request.setAttribute("tlm", list_tlm);
+            context.setAttribute("list_tlm", list_tlm);
             RequestDispatcher rd = request.getRequestDispatcher("trangchu_muonsach.jsp");
             rd.forward(request, response);
         }
